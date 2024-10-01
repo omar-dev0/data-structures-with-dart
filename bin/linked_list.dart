@@ -1,6 +1,6 @@
 import 'dart:io';
 
-class _LinkedListItem<T> {
+class _LinkedListItem<T>{
   T data;
   _LinkedListItem<T>? next;
   _LinkedListItem({this.next, required this.data});
