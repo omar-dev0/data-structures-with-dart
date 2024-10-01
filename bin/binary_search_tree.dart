@@ -16,7 +16,7 @@ class BST<T>{
   }
 
   void insert(num val){
-    _insert(val, _root);
+   _root =  _insert(val, _root);
     size++;
   }
 
@@ -34,13 +34,13 @@ class BST<T>{
   }
   _Node _insert(num val , _Node? node)
   {
-    if(_root == null)
+    if(node == null)
       {
         return _Node(val);
       }
     else
       {
-        if(val < node!.data)
+        if(val < node.data)
           {
             node.left = _insert(val, node.left);
           }
